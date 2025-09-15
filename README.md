@@ -20,27 +20,20 @@ It combines a **heuristic scoring engine (0–100)** with a **Gradient Boosting 
 
 ## 📂 Project Structure
 
-├── utils.py # Heuristic scoring, penalties, suggestions
-├── make_dataset.py # Synthetic dataset generator
-├── features.py # Feature extraction (~20 features)
-├── train.py # Model training & evaluation
-├── predict.py # CLI demo (input → result JSON)
-├── app.py # Streamlit demo app
-├── password_strength_ml_pack/
-│ ├── High_Level_Design.md
-│ ├── Detailed_Design.md
-│ ├── Flowcharts.md
-│ ├── plots/
-│ │ ├── confusion_matrix.png
-│ │ ├── feature_importances.png
-│ │ └── screenshot_cli_demo.png
-│ ├── results_summary.txt
-│ └── sample_test_passwords.csv
+password-strength-ml/
+│── app.py                 # Streamlit frontend (interactive strength meter)
+│── predict.py             # CLI password strength checker
+│── train.py               # Train Gradient Boosting model
+│── make_dataset.py        # Generate synthetic dataset (weak/medium/strong)
+│── features.py            # Feature engineering (~20 password features)
+│── utils.py               # Heuristic scoring, penalties, suggestions
+│── psm_model.joblib       # Trained ML model (saved after training)
+│── passwords_dataset.csv  # Generated dataset of passwords + labels
+│── requirements.txt       # Python dependencies
+│── README.md              # Project documentation
 
-yaml
-Copy code
 
----
+
 
 ## ⚙️ Installation
 

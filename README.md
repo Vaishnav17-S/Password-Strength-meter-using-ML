@@ -48,22 +48,19 @@ pip install numpy pandas scikit-learn matplotlib streamlit
 🏗️ Usage
 1. Generate dataset
 bash
-Copy code
 python make_dataset.py
 2. Train model
 bash
-Copy code
 python train.py
 This will output metrics and save psm_model.joblib.
 
 3. CLI Demo
 bash
-Copy code
 python predict.py
 Example:
 
-objectivec
-Copy code
+objective
+
 Enter a password: Tr@ins_Bridge#49
 Predicted: strong  | probs weak=0.02 medium=0.18 strong=0.80
 Heuristic score: 88 (strong)
@@ -92,12 +89,6 @@ Model: Gradient Boosting Classifier
 Dataset: ~12k synthetic passwords
 
 Accuracy: ~90% (varies per run)
-
-Confusion Matrix:
-
-Feature Importances:
-
-CLI Demo Screenshot:
 
 📖 References (After 2021)
 [1] D. Wang, X. Shan, Q. Dong, Y. Shen, and C. Jia, “No Single Silver Bullet: Measuring the Accuracy of Password Strength Meters,” USENIX Security Symposium, 2023.
